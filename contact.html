@@ -4,7 +4,6 @@
   <style>
     body {
       background-image: url("contactbk.jpg");
-      height: 100%;
 
       /* Center and scale the image nicely */
       background-position: center;
@@ -40,9 +39,28 @@
     ::placeholder {
       color: #455;
     }
+
+    #home {
+      font-size: 30px;
+      font-weight: lighter;
+    }
+
+    .homeImg {
+      height: 60px;
+      position: relative;
+      opacity: 0.75;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .homeImg:hover {
+      opacity: 1;
+      transform: scale(1.5, 1.5);
+    }
   </style>
 </head>
 <body>
+  <a href="index.html"><img src = "home.png" class="homeImg"></a> <b id="home">首页 / Home</b>
   <center>
     <table width = 1002px; border = 5px; cellspacing = 0px; cellpadding = 10px;>
       <tr>
