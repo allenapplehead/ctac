@@ -1,8 +1,128 @@
 <html>
+
 <head>
-  <title>CTAC</title>
+    <title>CTAC</title>
+    <style>
+        /* navbar */
+        ul {
+            width: 1002px;
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+            border-radius: 20px;
+            /*display: inline-block;*/
+        }
+
+        li {
+            display: inline-block;
+          
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: #feeee6;
+        }
+
+        #head {
+            width: 1002px;
+            background-image: linear-gradient(to left, #feeee0, white);
+        }
+
+        #chineseHeading {
+            font-size: 75px;
+        }
+
+        #englishHeading {
+            font-size: 40px;
+            font-weight: lighter;
+            margin-top: 200px;
+        }
+    </style>
 </head>
+
 <body>
-  testing
+    <!-- Header -->
+    <center>
+        <table id="head">
+            <tr>
+                <td width=140><img src="logo.jpg" height=140px></td>
+                <td valign="top"><b id="chineseHeading">加国中文教师协会</b>
+                    <br>
+                    <br><b id="englishHeading">Chinese Teacher's Association of Canada</b></td>
+                <td align="right" valign="top">
+                    <button type="button">Log in</button>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <!-- navbar -->
+    <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">Activities</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Mandarin Resources</a>
+        <div class="dropdown-content">
+          <a href="#">师资培训</a>
+          <a href="#">华文教材</a>
+          <a href="#">网上课堂</a>
+          <a href="#">资源中心</a>
+          <a href="#">中华文化</a>
+        </div>
+      </li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    </div>
 </body>
+
 </html>
