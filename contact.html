@@ -1,0 +1,85 @@
+<html>
+<head>
+  <title>Get in Touch!</title>
+  <style>
+    body {
+      background-image: url("contactbk.jpg");
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      font-family: Consolas;
+    }
+
+    th {
+      font-size: 60px;
+      font-weight: lighter;
+    }
+
+    #title {
+      font-size: 76px;
+      font-family: Papyrus;
+      font-weight: bolder;
+    }
+
+    .inputfield {
+      font-size: 30px;
+      font-family: Cambria;
+      font-weight: light;
+      background-color: #feeecf;
+    }
+
+    input {
+      height: 30px;
+      width: 480px;
+    }
+
+    ::placeholder {
+      color: #455;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <table width = 1002px; border = 5px; cellspacing = 0px; cellpadding = 10px;>
+      <tr>
+        <th><span id="title">C</span>ontact us!</th>
+      </tr>
+      <tr>
+        <td>
+          <form name="contact" netlify>
+            <br>
+            <p>
+              <label><b class="inputfield">First Name:</b> <br><hr><input type="text" name="fname" placeholder="Greg"/></label>
+            </p>
+            <br>
+            <p>
+              <label><b class="inputfield">Last Name:</b> <br><hr><input type="text" name="lname" placeholder="Heffley"/></label>
+            </p>
+            <br>
+            <p>
+              <label><b class="inputfield">Email:</b> <br><hr><input type="text" name="email" placeholder="email@example.com"/></label>
+            </p>
+            <br>
+            <p>
+              <label><b class="inputfield">WeChat:</b> <br><hr><input type="text" name="wechat" placeholder="gh123"/></label>
+            </p>
+            <br>
+            <p>
+              <label><b>Leave a Message:</b <br><br><textarea rows="4" cols="50">
+Lets Talk!
+</textarea></label>
+            <br><br>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
