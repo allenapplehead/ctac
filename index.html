@@ -3,6 +3,10 @@
 <head>
     <title>CTAC</title>
     <style>
+        #main {
+          background-color: #feeee8;
+          width: 1002px;
+        }
         /* navbar */
         ul {
             width: 1002px;
@@ -10,9 +14,13 @@
             margin: 0 auto;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            background-color: #AD6B41;
+            opacity: 0.85;
             text-align: center;
+            font-weight: bold;
+            border-width: 5px;
             border-radius: 20px;
+            font-size: 15px;
             /*display: inline-block;*/
         }
 
@@ -23,15 +31,16 @@
         li a,
         .dropbtn {
             display: inline-block;
-            color: white;
+            color: black;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
 
         li a:hover,
-        .dropdown:hover .dropbtn {
-            background-color: red;
+            .dropdown:hover .dropbtn {
+            font-size: 18px;
+            background-color: #feeee9;
         }
 
         li.dropdown {
@@ -65,64 +74,80 @@
         }
 
         body {
-            margin: 0 !important;
-            padding: 0 !important;
-            background-color: #feeee6;
+            /*margin: 0 !important;
+            padding: 0 !important;*/
+            background-color: white;
         }
 
         #head {
             width: 1002px;
-            background-image: linear-gradient(to left, #feeee0, white);
+            background-image: linear-gradient(to top left, #feeee0, white);
+            /* #FFF9F8 */
+            opacity: 0.95;
         }
 
         #chineseHeading {
-            font-size: 75px;
+            font-size: 65px;
+            letter-spacing: 7px;
+            font-family: "微軟正黑體";
+            font-weight: lighter;
+            /* font-family: 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', Helvetica, Arial, sans-serif; */
+
         }
 
         #englishHeading {
-            font-size: 40px;
+            font-size: 20px;
             font-weight: lighter;
             margin-top: 200px;
+            font-family: Cambria;
+            letter-spacing: 2.5px;
         }
 
+        ul {
+          margin-top: 10px;
+        }
     </style>
 </head>
 
 <body>
     <!-- Header -->
     <center>
-        <table id="head">
-            <tr>
-                <td width=140><img src="logo.jpg" height=140px></td>
-                <td valign="top"><b id="chineseHeading">加国中文教师协会</b>
-                    <br>
-                    <br><b id="englishHeading">Chinese Teacher's Association of Canada</b></td>
-                <td align="right" valign="top">
-                    <button type="button">Log in</button>
-                </td>
-            </tr>
-        </table>
-    </center>
+        <center>
+            <table id="head">
+                <tbody><tr>
+                    <td width="168"><img src="logo.jpg" height="168px"></td>
+                    <td valign="top"><b id="chineseHeading">加国中文教师协会</b>
+                        <br>
+                        <br><b id="englishHeading">The Chinese Teachers' Association of Canada (CTAC)</b></td>
+                </tr>
+            </tbody></table>
+        </center>
 
-    <!-- navbar -->
-    <div class="navbar">
-    <ul>
-      <li><a href="#home"><img src = "home.png" width = 23px;>首页 / Home</a></li>
-      <li><a href="#news"><img src = "activity2v.png" width = 23px;>活动 / Activities</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn"><img src = "book.png" width = 23px>中文资料 / Mandarin Resources</a>
-        <div class="dropdown-content">
-          <a href="http://www.hwjyw.com/training.shtml">师资培训</a>
-          <a href="http://www.hwjyw.com/textbook.shtml">华文教材</a>
-          <a href="http://www.hwjyw.com/classroom.shtml">网上课堂</a>
-          <a href="http://www.hwjyw.com/zyzx.shtml">资源中心</a>
-          <a href="http://www.hwjyw.com/culture.shtml">中华文化</a>
+        <!-- navbar -->
+        <div class="navbar">
+        <ul>
+          <li><a href="#home"><img src="home.png" width="23px;">首页 / Home</a></li>
+          <li><a href="#news"><img src="activity2v.png" width="23px;">活动 / Activities</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn"><img src="book.png" width="23px">中文资料 / Mandarin Resources</a>
+            <div class="dropdown-content">
+              <a href="http://www.hwjyw.com/training.shtml">师资培训</a>
+              <a href="http://www.hwjyw.com/textbook.shtml">华文教材</a>
+              <a href="http://www.hwjyw.com/classroom.shtml">网上课堂</a>
+              <a href="http://www.hwjyw.com/zyzx.shtml">资源中心</a>
+              <a href="http://www.hwjyw.com/culture.shtml">中华文化</a>
+            </div>
+          </li>
+          <li><a href="#about"><img src="about.png" width="23px">关于我们 / About Us</a></li>
+          <li><a href="contact.html"><img src="contact.png" width="23px">联系 / Contact Us</a></li>
+        </ul>
         </div>
-      </li>
-      <li><a href="#about"><img src = "about.png" width = 23px>关于我们 / About Us</a></li>
-      <li><a href="contact.html"><img src = "contact.png" width = 23px>联系 / Contact Us</a></li>
-    </ul>
-    </div>
+    <section id = "main">
+        <p>July 5, 2019 - etc</p>
+    </section>
+  </center>
+
+
 </body>
 
 </html>
