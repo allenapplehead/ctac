@@ -5,10 +5,11 @@
     <link href='https://fonts.googleapis.com/css?family=Oleo Script Swash Caps' rel='stylesheet'>
     <style>
         #main {
-          background-color: #feeee8;
-          width: 1002px;
+            background-color: #feeee8;
+            width: 1002px;
         }
         /* navbar */
+
         ul {
             width: 1002px;
             list-style-type: none;
@@ -39,7 +40,7 @@
         }
 
         li a:hover,
-            .dropdown:hover .dropbtn {
+        .dropdown:hover .dropbtn {
             font-size: 15.5px;
             background-color: #feeee9;
         }
@@ -54,7 +55,7 @@
             background-color: #f9f9f9;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
+            z-index: 10000000000;
         }
 
         .dropdown-content a {
@@ -77,7 +78,14 @@
         body {
             /*margin: 0 !important;
             padding: 0 !important;*/
-            background-color: white;
+            /*background-color: white;*/
+            background-image: url("CTAClogo.jpg");
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         #head {
@@ -90,10 +98,9 @@
         #chineseHeading {
             font-size: 65px;
             letter-spacing: 7px;
-            font-family: "微軟正黑體";
+            font-family: "Microsoft Yahei";
             font-weight: lighter;
             /* font-family: 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', Helvetica, Arial, sans-serif; */
-
         }
 
         #englishHeading {
@@ -105,58 +112,238 @@
         }
 
         ul {
-          margin-top: 0px;
+            margin-top: 0px;
         }
 
         #whole {
-          -webkit-box-shadow: 0px 0px 10px 1px #ddd;
-          box-shadow: 0px 0px 10px 1px #ddd;
-          width: 1002px;
+            -webkit-box-shadow: 0px 0px 10px 1px #ddd;
+            box-shadow: 0px 0px 10px 1px #ddd;
+            width: 1002px;
         }
+
+        #logo {
+            width: 169px;
+            height: 164px;
+        }
+        /* slideshow */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+        /* Slideshow container */
+
+        .slideshow-container {
+            max-width: 1000px;
+            //position: relative;
+            margin: auto;
+        }
+        /* Next & previous buttons */
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "next button" to the right */
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Caption text */
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* The dots/bullets/indicators */
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Fading animation */
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
     </style>
 </head>
 
 <body>
     <!-- Header -->
     <center>
-    <section id = "whole">
+        <section id="whole">
 
-        <center>
-            <table id="head">
-                <tbody><tr>
-                    <td width="178"><img src="logo.jpg" width="169px" height="164px"></td>
-                    <td valign="top"><b id="chineseHeading">加国中文教师协会</b>
-                        <br>
-                        <br><b id="englishHeading">The Chinese Teachers' Association of Canada (CTAC)</b></td>
-                </tr>
-            </tbody></table>
-        </center>
+            <center>
+                <table id="head">
+                    <tbody>
+                        <tr>
+                            <td width="178"><img id="logo" src="logo.jpg"></td>
+                            <td valign="top"><b id="chineseHeading">加国中文教师协会</b>
+                                <br>
+                                <br><b id="englishHeading">The Chinese Teachers' Association of Canada (CTAC)</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
 
-        <!-- navbar -->
-        <div class="navbar">
-        <ul>
-          <li><a href="index.html"><img src="home.png" width="15px;">首页 / Home</a></li>
-          <li><a href="activities.html"><img src="activity2v.png" width="15px;">活动 / Activities</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn"><img src="book.png" width="15px">中文资料 / Mandarin Resources</a>
-            <div class="dropdown-content">
-              <a href="http://www.hwjyw.com/training.shtml">师资培训</a>
-              <a href="http://www.hwjyw.com/textbook.shtml">华文教材</a>
-              <a href="http://www.hwjyw.com/classroom.shtml">网上课堂</a>
-              <a href="http://www.hwjyw.com/zyzx.shtml">资源中心</a>
-              <a href="http://www.hwjyw.com/culture.shtml">中华文化</a>
+            <!-- navbar -->
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html"><img src="home.png" width="15px;">首页 / Home</a>
+                    </li>
+                    <li>
+                        <a href="activities.html"><img src="activity2v.png" width="15px;">活动 / Activities</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn"><img src="book.png" width="15px">中文资料 / Mandarin Resources</a>
+                        <div class="dropdown-content">
+                            <a href="http://www.hwjyw.com/training.shtml">师资培训</a>
+                            <a href="http://www.hwjyw.com/textbook.shtml">华文教材</a>
+                            <a href="http://www.hwjyw.com/classroom.shtml">网上课堂</a>
+                            <a href="http://www.hwjyw.com/zyzx.shtml">资源中心</a>
+                            <a href="http://www.hwjyw.com/culture.shtml">中华文化</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#about"><img src="about.png" width="15px">关于我们 / About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><img src="contact.png" width="15px">联系 / Contact Us</a>
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li><a href="#about"><img src="about.png" width="15px">关于我们 / About Us</a></li>
-          <li><a href="contact.html"><img src="contact.png" width="15px">联系 / Contact Us</a></li>
-        </ul>
-        </div>
-    <section id = "main">
-        <b>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b><br>
-        <b>July 5, 2019 - etc</b>
-    </section>
-</section>
-</center>
+            <section id="main">
+              <br>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="assembly.JPG" style="width:97%">
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="IMG_3739.JPG" style="width:97%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="IMG_3753.JPG" style="width:97%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="judging.JPG" style="width:97%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="officials.JPG" style="width:97%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                </div>
+                <br>
+
+            </section>
+        </section>
+    </center>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 7000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 
 </html>
