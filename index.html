@@ -10,6 +10,9 @@
         }
         /* navbar */
 
+        .navbar {
+          z-index: 1;
+        }
         ul {
             width: 1002px;
             list-style-type: none;
@@ -55,7 +58,7 @@
             background-color: #f9f9f9;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 10000000000;
+            z-index: 1000;
         }
 
         .dropdown-content a {
@@ -70,23 +73,33 @@
             background-color: #f1f1f1;
         }
 
+        .dropdown-content a {
+            float: none;
+        }
+
+        .dropdown-content {
+          padding: 0px;
+          position: absolute;
+          z-index: 1;
+        }
         .dropdown:hover .dropdown-content {
             display: block;
-            padding: 0px;
+
         }
 
         body {
             /*margin: 0 !important;
             padding: 0 !important;*/
             /*background-color: white;*/
-            background-image: url("redmaple2.jpg");
-            height: 100%;
-            width: 100%;
+            background-image: url("maple.jpg");
+            height: 1000px;
+            width: 99.1%;
+
 
             /* Center and scale the image nicely */
-            background-position: top;
+            background-position: center;
             background-repeat: no-repeat;
-
+            background-size: cover;
         }
 
         #head {
@@ -143,15 +156,16 @@
 
         .slideshow-container {
             max-width: 1000px;
-            //position: relative;
+            position: inherit;
             margin: auto;
+            z-index: 0;
         }
         /* Next & previous buttons */
 
         .prev,
         .next {
             cursor: pointer;
-            position: absolute;
+            position: inherit;
             top: 50%;
             width: auto;
             padding: 16px;
@@ -181,7 +195,7 @@
             color: #f2f2f2;
             font-size: 15px;
             padding: 8px 12px;
-            position: absolute;
+            position: inherit;
             bottom: 8px;
             width: 100%;
             text-align: center;
@@ -288,35 +302,35 @@
                 </ul>
             </div>
             <section id="main">
+              <div class="slideshow-container">
+
+                  <div class="mySlides fade">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="assembly.JPG" style="width:97%">
+                      <div class="text">Caption Text</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="IMG_3753.JPG" style="width:97%">
+                      <div class="text">Caption Three</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="judging.JPG" style="width:97%">
+                      <div class="text">Caption Three</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="officials.JPG" style="width:97%">
+                      <div class="text">Caption Three</div>
+                  </div>
+
+              </div>
               <br>
-                <div class="slideshow-container">
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 4</div>
-                        <img src="assembly.JPG" style="width:97%">
-                        <div class="text">Caption Text</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 4</div>
-                        <img src="IMG_3753.JPG" style="width:97%">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 4</div>
-                        <img src="judging.JPG" style="width:97%">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 4</div>
-                        <img src="officials.JPG" style="width:97%">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                </div>
-                <br>
 
             </section>
         </section>
@@ -335,7 +349,7 @@
             if (myIndex > x.length) {
                 myIndex = 1
             }
-            x[myIndex - 1].style.display = "block";
+            x[myIndex - 1].style.display = "inline";
             setTimeout(carousel, 7000); // Change image every 2 seconds
         }
     </script>
