@@ -3,147 +3,7 @@
 <head>
     <title>CTAC</title>
     <link href='https://fonts.googleapis.com/css?family=Oleo Script Swash Caps' rel='stylesheet'>
-    <style>
-        #main {
-          background-color: #feeee8;
-          width: 1002px;
-        }
-        /* navbar */
-        ul {
-            width: 1002px;
-            list-style-type: none;
-            margin: 0 auto;
-            padding: 0;
-            overflow: hidden;
-            background-image: linear-gradient(to bottom, white, #d5aa90);
-            opacity: 0.85;
-            text-align: center;
-            font-weight: bold;
-            border-width: 5px;
-            border-radius: 4px;
-            font-size: 15px;
-            /*display: inline-block;*/
-        }
-
-        li {
-            display: inline-block;
-        }
-
-        li a,
-        .dropbtn {
-            display: inline-block;
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover,
-            .dropdown:hover .dropbtn {
-            font-size: 15.5px;
-            background-color: #feeee9;
-        }
-
-        li.dropdown {
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-            padding: 0px;
-        }
-
-        body {
-            /*margin: 0 !important;
-            padding: 0 !important;*/
-            background-color: white;
-        }
-
-        #head {
-            width: 1002px;
-            background-image: linear-gradient(to top left, #feeee0, white);
-            /* #FFF9F8 */
-            opacity: 0.95;
-        }
-
-        #chineseHeading {
-            font-size: 65px;
-            letter-spacing: 7px;
-            font-family: "Microsoft Yahei";
-            font-weight: lighter;
-            /* font-family: 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', Helvetica, Arial, sans-serif; */
-
-        }
-
-        #englishHeading {
-            font-size: 21.3px;
-            font-weight: bolder;
-            margin-top: 200px;
-            font-family: "Oleo Script Swash Caps";
-            letter-spacing: 2.5px;
-        }
-
-        ul {
-          margin-top: 0px;
-        }
-
-        #whole {
-          -webkit-box-shadow: 0px 0px 10px 1px #ddd;
-          box-shadow: 0px 0px 10px 1px #ddd;
-          width: 1002px;
-        }
-
-        #title {
-          font-size: 40px;
-          font-family: "微軟正黑體";
-        }
-
-        #events {
-
-        }
-
-        #divider {
-          width: 860px;
-        }
-
-        .content {
-          font-family: "微軟正黑體";
-          font-weight: bolder;
-        }
-
-        .happening {
-          font-size: 28px;
-          font-weight: bolder;
-          font-family: "Oleo Script Swash Caps";
-          color: #990000;
-        }
-
-        .linkTitle {
-          font-size: 23px;
-          font-weight: bolder;
-        }
-    </style>
+    <link href='css.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -184,14 +44,23 @@
     <section id = "main">
         <br>
         <table id = "events" width = 960px cellspacing = 10px>
-          <hr id = "divider">
+          <tr>
+            <td align = "left" valign = "top"><p class = "happening"><img src = "mic.png" width=25px><i>汉语水平考试公益讲座 - HSK</i></p><p class = "content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019年7月11日的汉语水平考试公益讲座吸引了许多听众冒雨参加。感谢向平教授讲解！感谢诚信理财的场地保险赞助！</p>
+            <br>
+            <img src = "hsk1.jpeg" height=200>&nbsp;&nbsp;&nbsp;&nbsp;<img src = "hsk2.jpeg" height=200>
+            </td>
+            <td><img src="hskad.jpeg" width=230px></td>
+          </tr>
+
+          <tr><td><hr id = "divider"></td></tr>
           <tr>
             <td align = "left" valign = "top"><p class = "happening"><img src = "mic.png" width=25px><i>远方的根讲演比赛 - The Roots of Distance</i></p><p class = "content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这次比赛旨在为中小学生提供一个展示汉语的舞台，提高学习汉语的热情，增进各省、 各校际及个民族的互动与了解。
             已“根在远方， 亲情相随”为主题，本次比赛分为的年级（1-3年级）、中高年级（4-8年级）、高中（9-12年级）、汉语非母语家庭学生组（1-12年级）四个组别的参赛选手制定了相对应的四个演讲题目：《我最爱的人》、《难忘之旅》、《我的家家想在中国》以及《我的中国朋友》。</p>
             <br>
             <b class = "linkTitle"><img src = "news.png" width = 35px>活动新闻</b><br><br>
             <a href="http://www.xinhuanet.com/english/2019-06/10/c_138129457.htm">新华 - North America</a><br>
-            <a href="http://world.people.com.cn/n1/2019/0610/c1002-31127822.html">人民网 - people.cn</a><br><br>
+            <a href="http://world.people.com.cn/n1/2019/0610/c1002-31127822.html">人民网 - people.cn</a><br>
+            <a href="https://mp.weixin.qq.com/s/81LuQ1qjrTozCqRZWevMsw">《远方的根》演讲比赛的终结</a><br><br>
             <b class = "linkTitle"><img src = "vid.png" width = 35px>活动视频</b><br><br>
             <a href="https://www.youtube.com/watch?v=S0f8QHbWMjo">《远方的根》 精编版 - youtube.com</a>
             </td>
