@@ -150,6 +150,7 @@ img {
 
 .slideshow-container {
     max-width: 1000px;
+    max-height: 555px;
     position: inherit;
     margin: auto;
     z-index: 0;
@@ -246,4 +247,10 @@ img {
     to {
         opacity: 1
     }
+}
+
+#footer {
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: "Microsoft Yahei";
 }
