@@ -284,3 +284,10 @@ img {
   transition: max-height 0.2s ease-out;
   background-color: #feeee9;
 }
+
+/* developer's tag */
+.heart{color:#e25555;}
+#dev {
+  margin-right:20;
+  font-size:15px;
+}
