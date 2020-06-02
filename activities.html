@@ -49,7 +49,19 @@
         <table id = "events" width = 960px cellspacing = 10px>
           <tr>
             <td align="left" valign="top">
-              <button style='background-color: #a65959' class="collapsible"><p class="happening"><img src = "icons/mic.png" width=25px><i id="header3"></i></p></button>
+              <button style='background-color: #a65959' class="collapsible"><p class="happening"><img src = "icons/new.png" width=40px><i id="header4"></i></p></button>
+              <div class="contentcol">
+                <p style="line-height:25px" id="body4">
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <tr><td><hr id = "divider"></td></tr>
+
+          <tr>
+            <td align="left" valign="top">
+              <button class="collapsible"><p class="happening"><img src = "icons/mic.png" width=25px><i id="header3"></i></p></button>
               <div class="contentcol">
                 <p style="line-height:25px" id="body3">
 
@@ -131,6 +143,8 @@
     //alert('Successfully processed!');
     console.log(data);
     data.forEach(function(data) {
+      document.getElementById("header4").innerHTML = data.header4;
+      document.getElementById("body4").innerHTML = data.body4;
       document.getElementById("header3").innerHTML = data.header3;
       document.getElementById("body3").innerHTML = data.body3;
       document.getElementById("header2").innerHTML = data.header2;
