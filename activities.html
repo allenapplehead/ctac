@@ -142,8 +142,6 @@
   }
 
   function showInfo(data, tabletop) {
-    //alert('Successfully processed!');
-    console.log(data);
     data.forEach(function(data) {
       document.getElementById("header4").innerHTML = data.header4;
       document.getElementById("body4").innerHTML = data.body4;
@@ -156,7 +154,7 @@
    });
   }
 
-  window.addEventListener('DOMContentLoaded', init)
+  window.addEventListener('DOMContentLoaded', init);
 </script>
 
 </body>
