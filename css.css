@@ -283,6 +283,7 @@ img {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #feeee9;
+  font-size: 1.75vh;
 }
 
 /* developer's tag */
