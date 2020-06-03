@@ -49,10 +49,9 @@
         <table id = "events" width = 960px cellspacing = 10px>
           <tr>
             <td align="left" valign="top">
-              <button style='background-color: #a65959' class="collapsible"><p class="happening"><img src = "icons/new.png" width=40px><i>中文教师网上座谈会</i></p></button>
+              <button style='background-color: #a65959' class="collapsible"><p class="happening"><img src = "icons/new.png" width=40px><i id="header4"></i></p></button>
               <div class="contentcol">
-                <p style="line-height:25px">
-                  <b>中文教师网上座谈会</b> <br><br> 主题: 亲近中文，走进经典——中华经典在海外中文教学中的应用与思考 <br><br> 时间：2020年6月14日（星期日）             14:00-16:00 (Ottawa time) <br><br> 主讲：姚岚老师 <br><br> 形式：Zoom Meet <br><br> 多年来如何将中华经典读诵写应用到海外中文教育中困惑着许多海外中文教师。 去年12月姚岚老师专程回国参加了由教育部语言文字应用管理司主办、暨南大学承办的2019“海外中文教师中华经典诵写讲研修活动”。姚老师会与大家分享研修活动的内容，和她个人的多年教学体会。 同时大家一起讨论对中华经典读诵写在海外教学中如何融入，比例多少适中，怎样更有效、可行... <br><br> 欢迎感兴趣的老师们报名参加！ 二维码扫也可以链接以下报名表 <br><a href = "https://docs.google.com/forms/d/e/1FAIpQLSdFGMkugYn2gABBwKjcAFD_K6zBqXDzflwtPDB3J0uk6o7H6w/viewform?usp=pp_url">Sign Up / 报名！</a> <br><br>  2020 年 6月1日
+                <p style="line-height:25px" id="body4">
                 </p>
                 <img src="icons/stay-safe.jpg" width=175px>
               </div>
@@ -144,8 +143,8 @@
 
   function showInfo(data, tabletop) {
     data.forEach(function(data) {
-      //document.getElementById("header4").innerHTML = data.header4;
-      //document.getElementById("body4").innerHTML = data.body4;
+      document.getElementById("header4").innerHTML = data.header4;
+      document.getElementById("body4").innerHTML = data.body4;
       document.getElementById("header3").innerHTML = data.header3;
       document.getElementById("body3").innerHTML = data.body3;
       document.getElementById("header2").innerHTML = data.header2;
