@@ -86,7 +86,7 @@ body {
     padding: 0 !important;*/
     /*background-color: white;*/
     background-image: url("photos/maple.jpg");
-    height: 1000px;
+    height: 135%;
     width: 99.1%;
 
 
@@ -286,7 +286,7 @@ img {
   max-height: 0;
   width: 950px;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.5s ease-out;
   background-color: #feeee9;
   font-size: min(max(11px, 1.75vh), 15px);
 }
