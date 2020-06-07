@@ -283,6 +283,7 @@ img {
 .contentcol {
   padding: 0 10px;
   max-height: 0;
+  width: 950px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #feeee9;
