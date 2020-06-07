@@ -278,6 +278,7 @@ img {
 
 .active, .collapsible:hover {
   background-color: #555;
+  width: 950px;
 }
 
 .contentcol {
