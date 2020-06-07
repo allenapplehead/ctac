@@ -117,15 +117,17 @@
     var i;
 
     for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var contentcol = this.nextElementSibling;
-        if (contentcol.style.maxHeight){
-          contentcol.style.maxHeight = null;
-        } else {
-          contentcol.style.maxHeight = contentcol.scrollHeight + "px";
-        }
-      });
+      for (var j = 0; j < 3; ++j) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var contentcol = this.nextElementSibling;
+          if (contentcol.style.maxHeight){
+            contentcol.style.maxHeight = null;
+          } else {
+            contentcol.style.maxHeight = contentcol.scrollHeight + "px";
+          }
+        });
+      }
     }
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
