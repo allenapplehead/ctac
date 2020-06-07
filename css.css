@@ -286,7 +286,7 @@ img {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #feeee9;
-  font-size: min(max(12px, 1.75vh), 16px);
+  font-size: min(max(11px, 1.75vh), 15px);
 }
 
 /* developer's tag */
