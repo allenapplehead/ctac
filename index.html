@@ -61,7 +61,7 @@
           <tr>
             <td align="left" valign="top">
               <button style='background-color: #a65959' class="collapsible"><p class="happening"><img src = "icons/new.png" width=40px><i id="header4"></i></p></button>
-              <div class="contentcol">
+              <div id="contentcolnew">
                 <p style="line-height:25px" id="body4">
                 </p>
               </div>
@@ -125,6 +125,8 @@
     // code for the collapsibles
     var coll = document.getElementsByClassName("collapsible");
     var i;
+
+    contentcolnew.style.maxHeight = 800 + "px";
 
     for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function() {
