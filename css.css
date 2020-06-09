@@ -291,6 +291,15 @@ img {
   font-size: min(max(11px, 1.75vh), 15px);
 }
 
+#contentcolnew {
+  padding: 0 10px;
+  max-height: 0;
+  width: 950px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: #feeee9;
+  font-size: min(max(11px, 1.75vh), 15px);
+}
 /* developer's tag */
 .heart{color:#e25555;}
 #dev {
