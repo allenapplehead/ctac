@@ -5,11 +5,6 @@
     <link href='https://fonts.googleapis.com/css?family=Oleo Script Swash Caps' rel='stylesheet'>
     <link href='css.css' rel='stylesheet'>
     <style>
-      #main {
-        background-color: #feeee8;
-        width: 1002px;
-        height: 630px;
-      }
       b {
         font-size: 1.8vh;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -74,78 +69,53 @@
                 </ul>
             </div>
             <section id="main">
-              <br>
-              <div class="slideshow-container">
-
-                  <div class="mySlides fade">
-                      <div class="numbertext">1 / 4</div>
-                      <img class = "slideshowimg" src="photos/officials.jpg" style="width:97%">
-                      <center><div class="text">The Roots of Distance / 远方的根 - 组委会</div></center>
-                  </div>
-
-                  <div class="mySlides fade">
-                      <div class="numbertext">2 / 4</div>
-                      <img class = "slideshowimg" src="photos/winners.jpg" style="width:97%">
-                      <center><div class="text">The Roots of Distance / 远方的根 - Competition Award Winners</div></center>
-                  </div>
-
-                  <div class="mySlides fade">
-                      <div class="numbertext">3 / 4</div>
-                      <img class = "slideshowimg" src="photos/judges.jpg" style="width:97%">
-                      <center><div class="text">The Roots of Distance / 远方的根 - Judges</div></center>
-                  </div>
-
-                  <div class="mySlides fade">
-                      <div class="numbertext">4 / 4</div>
-                      <img class = "slideshowimg" src="photos/hsk2.jpeg" style="width:97%; height:555px">
-                      <center><div class="text">HSK 汉语水平考试</div></center>
-                  </div>
-
-              </div>
-              <!-- footer -->
-              <div id="homepageFooter">
-                <hr>
-                <table id="footer" width="100%">
-                  <tr align="center">
-                    <td width=50%><b style="font-weight: bolder">613-366-5177</b></td>
-                    <td width=50%><b style="font-weight: bolder">cctaottawa@gmail.com</b></td>
-                  </tr>
-                  <tr align="center">
-                    <td width=50%><img src="icons/phone.png" width=24px height=24px></td>
-                    <td width=50%><img src="icons/mail.png" width=24px height=24px></td>
-                  </tr>
-                  <tr></tr>
+              <table width="100%">
+                <tr style="background-image: url('photos/aboutusbk.jpg'); background-repeat: no-repeat; background-position: top; background-size: cover;">
+                  <td>
+                    <center>
+                      <h2 style="margin-top: 15px;">学生中文原作 / Student Original Works</h2>
+                    </center>
+                  </td>
+                </tr>
+              </table>
+                <br>
+                <table id = "events" width = 960px cellspacing = 10px>
                   <tr>
-                    <td colspan = "2" align="center"><b><br>Copyright ©2019-2020 https://www.ctacanada.ca/<br>The Chinese Teachers' Association of Canada</b></td>
+                    <td align="left" valign="top">
+                      <button style='background-color: #a65959' class="collapsible"><p class="happening"><img src = "icons/new.png" width=40px><i>离开学校三周，渥太华中学生谈新冠肺炎的影响</i></p></button>
+                      <div class="contentcol">
+                        <p style="line-height:25px">
+                          <center>
+                          <img src="photos/students20192020.png">
+                          <br><br>
+                          <a href="https://mp.weixin.qq.com/s/E8drZlXRlp9G-Cc-mD_PsQ" target="_blank">渥太华中学生原作</a>
+                          </center>
+                        </p>
+                      </div>
+                    </td>
                   </tr>
+
                 </table>
-              </div>
             </section>
         </section>
 
     </center>
-
-
     <script>
-        // code for the slideshow
+        // code for the collapsibles
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var contentcol = this.nextElementSibling;
+            if (contentcol.style.maxHeight){
+              contentcol.style.maxHeight = null;
+            } else {
+              contentcol.style.maxHeight = 800 + "px";
             }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
-            }
-            x[myIndex - 1].style.display = "inline";
-            setTimeout(carousel, 7000); // Change image every 2 seconds
+          });
         }
-
     </script>
 </body>
 
