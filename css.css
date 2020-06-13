@@ -20,7 +20,7 @@ ul {
     font-weight: bold;
     border-width: 5px;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 13.2px;
     /*display: inline-block;*/
 }
 
@@ -39,7 +39,7 @@ li a,
 
 li a:hover,
 .dropdown:hover .dropbtn {
-    font-size: 15.5px;
+    font-size: 13.5px;
     background-color: #feeee9;
 }
 
