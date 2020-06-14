@@ -85,7 +85,7 @@ li.dropdown {
   position: absolute;
   display: none;
   left: 0;
-  top: 310px;
+  top: 0px;
   left: 160px;
   background-color: #f9f9f9;
   max-width: 160px;
