@@ -74,9 +74,25 @@
         <table id = "events" width = 960px cellspacing = 10px>
           <tr>
             <td align="left" valign="top">
-              <button style='background-color: #a65959' class="collapsible"><p class="happening"><img src = "icons/new.png" width=40px><i id="header4"></i></p></button>
+              <button style='background-color: #a65959' class="collapsible"><p class="happening"><img src = "icons/new.png" width=40px><i id="header5"></i></p></button>
               <div id="contentcolnew">
+                <center>
+                <p style="line-height:25px" id="body5">
+                </p>
+                <img width=400px src = "logos/2posternocommitteecropped copy.jpg">
+              </center>
+              </div>
+            </td>
+          </tr>
+
+          <tr><td><hr id = "divider"></td></tr>
+
+          <tr>
+            <td align="left" valign="top">
+              <button class="collapsible"><p class="happening"><img src = "icons/mic.png" width=25px><i id="header4"></i></p></button>
+              <div class="contentcol">
                 <p style="line-height:25px" id="body4">
+
                 </p>
               </div>
             </td>
@@ -168,6 +184,8 @@
 
   function showInfo(data, tabletop) {
     data.forEach(function(data) {
+      document.getElementById("header5").innerHTML = data.header5;
+      document.getElementById("body5").innerHTML = data.body5;
       document.getElementById("header4").innerHTML = data.header4;
       document.getElementById("body4").innerHTML = data.body4;
       document.getElementById("header3").innerHTML = data.header3;
