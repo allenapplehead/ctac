@@ -74,13 +74,14 @@
         <table id = "events" width = 960px cellspacing = 10px>
           <tr>
             <td align="left" valign="top">
-              <button style='background-color: #a65959' class="collapsible"><p class="happening"><img src = "icons/new.png" width=40px><i id="header5"></i></p></button>
+              <button class="collapsible" style='background-color: #a65959'><p class="happening"><img src = "icons/new.png" width=40px><i id="header5"></i></p></button>
               <div id="contentcolnew">
-                <center>
-                <p style="line-height:25px" id="body5">
+                <p style="line-height:18px; font-size: 14px" id="body5">
                 </p>
-                <img width=400px src = "logos/2posternocommitteecropped copy.jpg">
-              </center>
+                <a href="logos/2020speechposter copy.jpg"><img width=305px height=395px src = "logos/2020speechposter copy.jpg"></a>
+                <a href="logos/Final Chinese poster 2020.pdf"><img width=305px src = "logos/finalchineseposter.jpg"></a>
+                <a href="logos/Final English Poster 2020.pdf"><img width=305px src = "logos/finalenglishposter.jpg"></a>
+                <p>&nbsp;&nbsp;<b>*</b> 请点开以上画面来下载信息 / Click on the images above to download and view</p>
               </div>
             </td>
           </tr>
@@ -156,7 +157,7 @@
     var coll = document.getElementsByClassName("collapsible");
     var i;
 
-    contentcolnew.style.maxHeight = 800 + "px";
+    contentcolnew.style.maxHeight = 1200 + "px";
 
     for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function() {
@@ -165,7 +166,7 @@
         if (contentcol.style.maxHeight){
           contentcol.style.maxHeight = null;
         } else {
-          contentcol.style.maxHeight = 800 + "px";
+          contentcol.style.maxHeight = 1200 + "px";
         }
       });
     }
