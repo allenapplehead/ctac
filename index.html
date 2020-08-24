@@ -74,8 +74,22 @@
         <table id = "events" width = 960px cellspacing = 10px>
           <tr>
             <td align="left" valign="top">
-              <button class="collapsible"><p class="happening"><img src = "icons/mic.png" width=25px><i id="header5"></i></p></button>
+              <button class="collapsible"><p class="happening"><img src = "icons/mic.png" width=25px><i id="header3"></i></p></button>
               <div id="contentcolnew">
+                <br>
+                <img src = "icons/vid.png" width = 35px>活动视频 : </b>
+                <p style="line-height:25px" id="body3">
+
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <tr><td><hr id = "divider"></td></tr>
+          <tr>
+            <td align="left" valign="top">
+              <button class="collapsible"><p class="happening"><img src = "icons/mic.png" width=25px><i id="header5"></i></p></button>
+              <div class="contentcol">
                 <p style="line-height:18px; font-size: 14px" id="body5">
                 </p>
                 <table width=100%>
@@ -85,7 +99,6 @@
                     <a href="https://mp.weixin.qq.com/s/VeIOi2x6V127GLz4q6hBQA"> 疫情下的我们！加拿大第二届《远方的根》中小学生汉语演讲比赛圆满结束！</a><br><br>
                     <b class = "linkTitle"><img src = "icons/vid.png" width = 35px>活动视频</b><br><br>
                     <a href="https://youtu.be/kYMA8OJN_Tg"> 加拿大第二届《远方的根》中小学生汉语演讲比赛-2020年8月9日</a><br>
-                    <a href="https://youtu.be/p-Lqhq2QS8I"> 汉语演讲技巧 用声音和语言绘画</a><br>
                   </tr>
                 </table>
             </td>
@@ -105,19 +118,6 @@
           </tr>
 
           <tr><td><hr id = "divider"></td></tr>
-
-          <!-- <tr>
-            <td align="left" valign="top">
-              <button class="collapsible"><p class="happening"><img src = "icons/mic.png" width=25px><i id="header3"></i></p></button>
-              <div class="contentcol">
-                <p style="line-height:25px" id="body3">
-
-                </p>
-              </div>
-            </td>
-          </tr>
-
-          <tr><td><hr id = "divider"></td></tr> -->
 
           <tr>
             <td align = "left" valign = "top">
@@ -195,8 +195,8 @@
       document.getElementById("body5").innerHTML = data.body5;
       document.getElementById("header4").innerHTML = data.header4;
       document.getElementById("body4").innerHTML = data.body4;
-      // document.getElementById("header3").innerHTML = data.header3;
-      // document.getElementById("body3").innerHTML = data.body3;
+      document.getElementById("header3").innerHTML = data.header3;
+      document.getElementById("body3").innerHTML = data.body3;
       document.getElementById("header2").innerHTML = data.header2;
       document.getElementById("body2").innerHTML = data.body2;
       document.getElementById("header").innerHTML = data.header;
