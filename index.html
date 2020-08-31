@@ -74,8 +74,17 @@
         <table id = "events" width = 960px cellspacing = 10px>
           <tr>
             <td align="left" valign="top">
-              <button class="collapsible"><p class="happening"><img src = "icons/mic.png" width=25px><i id="header5"></i></p></button>
+              <button style='background-color: #a65959' class="collapsible"><p class="happening"><img src = "icons/mic.png" width=25px><i id="header6"></i></p></button>
               <div id="contentcolnew">
+                <p style="line-height:18px; font-size: 14px" id="body6">
+                </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="left" valign="top">
+              <button class="collapsible"><p class="happening"><img src = "icons/mic.png" width=25px><i id="header5"></i></p></button>
+              <div class="contentcol">
                 <p style="line-height:18px; font-size: 14px" id="body5">
                 </p>
                 <table width=100%>
@@ -87,6 +96,7 @@
                     <a href="https://youtu.be/kYMA8OJN_Tg"> 加拿大第二届《远方的根》中小学生汉语演讲比赛-2020年8月9日</a><br>
                   </tr>
                 </table>
+              </div>
             </td>
           </tr>
 
@@ -192,6 +202,8 @@
 
   function showInfo(data, tabletop) {
     data.forEach(function(data) {
+      document.getElementById("header6").innerHTML = data.header6;
+      document.getElementById("body6").innerHTML = data.body6;
       document.getElementById("header5").innerHTML = data.header5;
       document.getElementById("body5").innerHTML = data.body5;
       document.getElementById("header4").innerHTML = data.header4;
