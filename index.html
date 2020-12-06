@@ -1,433 +1,160 @@
-<!-- formely activities.html -->
 <html>
-   <head>
-      <title>CTAC</title>
-      <link href='https://fonts.googleapis.com/css?family=Oleo Script Swash Caps' rel='stylesheet'>
-      <link href='css.css' rel='stylesheet'>
-      <style type="text/css">
-         #main {
-         background-color: #feeee8;
-         width: 1002px;
-         height: 1000px;
-         }
-         div#vis {
-         display: none;
-         }
-         div#vis2 {
-         display: none;
-         }
-         div#vis3 {
-         display: none;
-         }
-         div#vis4 {
-         display: none;
-         }
-         div#vis5 {
-         display: none;
-         }
-         div#vis6 {
-         display: none;
-         }
-         div#vis7 {
-         display: none;
-         }
-         div#vis8 {
-         display: none;
-         }
-         div#vis9 {
-         display: none;
-         }
-         div#vis10 {
-         display: none;
-         }
-      </style>
-   </head>
-   <body>
-      <!-- Header -->
-      <center>
-         <section id = "whole">
+
+<head>
+    <title>CTAC</title>
+    <link href='https://fonts.googleapis.com/css?family=Oleo Script Swash Caps' rel='stylesheet'>
+    <link href='css.css' rel='stylesheet'>
+    <style>
+      #main {
+        background-color: #feeee8;
+        width: 1002px;
+        height: 630px;
+      }
+      b {
+        font-size: 1.8vh;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-weight: lighter;
+      }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <center>
+        <section id="whole">
+
             <center>
-               <table id="head">
-                  <tbody>
-                     <tr>
-                        <td width="178"><img src="logos/logo.jpg" width="169px" height="164px"></td>
-                        <td valign="top"><b id="chineseHeading">加国中文教师协会</b>
-                           <br>
-                           <br><b id="englishHeading">The Chinese Teachers' Association of Canada (CTAC)</b>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
+                <table id="head">
+                    <tbody>
+                        <tr>
+                            <td width="178"><img id="logo" src="logos/logo.jpg"></td>
+                            <td valign="top"><b id="chineseHeading">加国中文教师协会</b>
+                                <br>
+                                <br><b id="englishHeading">The Chinese Teachers' Association of Canada (CTAC)</b></td>
+                        </tr>
+                    </tbody>
+                </table>
             </center>
+
             <!-- navbar -->
             <div class="navbar">
-               <ul>
-                  <li><a href="home.html"><img src="icons/home.png" width="15px;">首页 / Home</a></li>
-                  <li><a href="index.html"><img src="icons/activity2v.png" width="15px;">活动 / Activities</a></li>
-                  <li class="dropdown">
-                     <a href="javascript:void(0)" class="dropbtn"><img src="icons/written.png" width="15px">中文原作 / Originals</a>
-                     <div class="dropdown-content">
+                <ul>
+                    <li>
+                        <a href="index.html"><img src="icons/home.png" width="15px;">首页 / Home</a>
+                    </li>
+                    <li>
+                        <a href="act.html"><img src="icons/activity2v.png" width="15px;">活动 / Activities</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="javascript:void(0)" class="dropbtn"><img src="icons/written.png" width="15px">中文原作 / Originals</a>
+                      <div class="dropdown-content">
                         <a href="teacher_originals.html">老师原作</a>
                         <a href="student_originals.html">学生原作</a>
-                     </div>
-                  </li>
-                  <li class="dropdown">
-                     <a href="javascript:void(0)" class="dropbtn"><img src="icons/book.png" width="15px">中文资料 / Mandarin Resources</a>
-                     <div class="dropdown-content">
-                        <div class="open" onclick>
-                           <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名师讲堂&nbsp;&nbsp;></p>
-                           <ul class="subdropdown">
+                      </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn"><img src="icons/book.png" width="15px">中文资料 / Mandarin Resources</a>
+                        <div class="dropdown-content">
+                          <div class="open" onclick>
+                          <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名师讲堂&nbsp;&nbsp;></p>
+                            <ul class="subdropdown">
                               <a href="https://www.eeo.cn/live.php?lessonKey=7bc4cfdaa7e0147e" target="_blank">第一讲</a>
                               <a href="https://www.eeo.cn/live.php?lessonKey=5605fdb9b25ed90f" target="_blank">第二讲</a>
-                           </ul>
+                            </ul>
+                          </div>
+                          <a href="daocaoren.html" target="_blank">叶圣陶：《稻草人》听书（1-29）</a>
+                          <a href="http://www.hwjyw.com/training.shtml" target="_blank">师资培训</a>
+                          <a href="http://www.hwjyw.com/textbook.shtml" target="_blank">华文教材</a>
+                          <a href="http://www.hwjyw.com/classroom.shtml" target="_blank">网上课堂</a>
+                          <a href="http://www.hwjyw.com/zyzx.shtml" target="_blank">资源中心</a>
+                          <a href="http://www.hwjyw.com/culture.shtml" target="_blank">中华文化</a>
+                          <a href="http://m.aoshu.com/zlk/dzkb/" target="_blank">小学资源库</a>
+                          <a href="https://mp.weixin.qq.com/s/mSLs7gZ1AI7sGGsptEm9Vw" target="_blank">超级语文</a>
+                          <a href="https://mp.weixin.qq.com/s/4c9UH682vmsfFObKJ-aAWQ" target="_blank">宋词三百首</a>
                         </div>
-                        <a href="daocaoren.html" target="_blank">叶圣陶：《稻草人》听书（1-29）</a>
-                        <a href="http://www.hwjyw.com/training.shtml" target="_blank">师资培训</a>
-                        <a href="http://www.hwjyw.com/textbook.shtml" target="_blank">华文教材</a>
-                        <a href="http://www.hwjyw.com/classroom.shtml" target="_blank">网上课堂</a>
-                        <a href="http://www.hwjyw.com/zyzx.shtml" target="_blank">资源中心</a>
-                        <a href="http://www.hwjyw.com/culture.shtml" target="_blank">中华文化</a>
-                        <a href="http://m.aoshu.com/zlk/dzkb/" target="_blank">小学资源库</a>
-                        <a href="https://mp.weixin.qq.com/s/mSLs7gZ1AI7sGGsptEm9Vw" target="_blank">超级语文</a>
-                        <a href="https://mp.weixin.qq.com/s/4c9UH682vmsfFObKJ-aAWQ" target="_blank">宋词三百首</a>
-                     </div>
-                  </li>
-                  <li><a href="about.html"><img src="icons/about.png" width="15px">关于我们 / About Us</a></li>
-                  <li><a href="contact.html"><img src="icons/contact.png" width="15px">联系 / Contact Us</a></li>
-               </ul>
+                    </li>
+                    <li>
+                        <a href="about.html"><img src="icons/about.png" width="15px">关于我们 / About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><img src="icons/contact.png" width="15px">联系 / Contact Us</a>
+                    </li>
+                </ul>
             </div>
-            <section id = "main">
-               <table width="100%">
-                  <tr style="background-image: url('photos/aboutusbk.jpg'); background-repeat: no-repeat; background-position: top; background-size: cover;">
-                     <td>
-                        <center>
-                           <h2 style="margin-top: 15px;">CTAC 活动 / Activities</h2>
-                        </center>
-                     </td>
+            <section id="main">
+              <br>
+              <div class="slideshow-container">
+
+                  <div class="mySlides fade">
+                      <div class="numbertext">1 / 4</div>
+                      <img class = "slideshowimg" src="photos/officials.jpg" style="width:97%">
+                      <center><div class="text">The Roots of Distance / 远方的根 - 组委会</div></center>
+                  </div>
+
+                  <div class="mySlides fade">
+                      <div class="numbertext">2 / 4</div>
+                      <img class = "slideshowimg" src="photos/winners.jpg" style="width:97%">
+                      <center><div class="text">The Roots of Distance / 远方的根 - Competition Award Winners</div></center>
+                  </div>
+
+                  <div class="mySlides fade">
+                      <div class="numbertext">3 / 4</div>
+                      <img class = "slideshowimg" src="photos/judges.jpg" style="width:97%">
+                      <center><div class="text">The Roots of Distance / 远方的根 - Judges</div></center>
+                  </div>
+
+                  <div class="mySlides fade">
+                      <div class="numbertext">4 / 4</div>
+                      <img class = "slideshowimg" src="photos/hsk2.jpeg" style="width:97%; height:555px">
+                      <center><div class="text">HSK 汉语水平考试</div></center>
+                  </div>
+
+              </div>
+              <!-- footer -->
+              <div id="homepageFooter">
+                <hr>
+                <table id="footer" width="100%">
+                  <tr align="center">
+                    <td width=50%><b style="font-weight: bolder">613-366-5177</b></td>
+                    <td width=50%><b style="font-weight: bolder">cctaottawa@gmail.com</b></td>
                   </tr>
-               </table>
-               <br>
-               <table id = "events" width = 960px cellspacing = 10px>
-                 <tr>
-                    <td align="left" valign="top">
-                       <div id="vis10">
-                          <button class="collapsible" id="10b">
-                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header10"></i></p>
-                          </button>
-                          <div class="contentcol" id="10">
-                             <p style="line-height:25px" id="body10">
-                             </p>
-                          </div>
-                       </div>
-                    </td>
-                 </tr>
-                 <tr>
-                    <td align="left" valign="top">
-                       <div id="vis9">
-                          <button class="collapsible" id="9b">
-                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header9"></i></p>
-                          </button>
-                          <div class="contentcol" id="9">
-                             <p style="line-height:25px" id="body9">
-                             </p>
-                          </div>
-                       </div>
-                    </td>
-                 </tr>
-                 <tr>
-                    <td align="left" valign="top">
-                       <div id="vis8">
-                          <button class="collapsible" id="8b">
-                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header8"></i></p>
-                          </button>
-                          <div class="contentcol" id="8">
-                             <p style="line-height:25px" id="body8">
-                             </p>
-                          </div>
-                       </div>
-                    </td>
-                 </tr>
-                 <tr>
-                    <td align="left" valign="top">
-                       <div id="vis7">
-                          <button class="collapsible" id="7b">
-                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header7"></i></p>
-                          </button>
-                          <div class="contentcol" id="7">
-                             <p style="line-height:25px" id="body7">
-                             </p>
-                          </div>
-                       </div>
-                    </td>
-                 </tr>
+                  <tr align="center">
+                    <td width=50%><img src="icons/phone.png" width=24px height=24px></td>
+                    <td width=50%><img src="icons/mail.png" width=24px height=24px></td>
+                  </tr>
+                  <tr></tr>
                   <tr>
-                     <td align="left" valign="top">
-                        <div id="vis6">
-                           <button class="collapsible" id="6b">
-                              <p class="happening"><img src = "icons/mic.png" width=25px><i id="header6"></i></p>
-                           </button>
-                           <div class="contentcol" id="6">
-                              <p style="line-height:18px; font-size: 14px" id="body6">
-                              </p>
-                           </div>
-                        </div>
-                     </td>
+                    <td colspan = "2" align="center"><b><br>Copyright ©2019-2020 https://www.ctacanada.ca/<br>The Chinese Teachers' Association of Canada</b></td>
                   </tr>
-                  <tr>
-                     <td align="left" valign="top">
-                        <div id="vis5">
-                           <button class="collapsible" id="5b">
-                              <p class="happening"><img src = "icons/mic.png" width=25px><i id="header5"></i></p>
-                           </button>
-                           <div class="contentcol" id="5">
-                              <p style="line-height:18px; font-size: 14px" id="body5">
-                              </p>
-                              <table width=100%>
-                                 <tr>
-                                    <td><img src="logos/2poster copy copy.jpg" width=300px></td>
-                                    <td valign="top" align="center" width=400px><b class = "linkTitle"><img src = "icons/news.png" width = 35px>活动新闻</b><br><br>
-                                       <a href="https://mp.weixin.qq.com/s/VeIOi2x6V127GLz4q6hBQA"> 疫情下的我们！加拿大第二届《远方的根》中小学生汉语演讲比赛圆满结束！</a><br><br>
-                                       <b class = "linkTitle"><img src = "icons/vid.png" width = 35px>活动视频</b><br><br>
-                                       <a href="https://youtu.be/kYMA8OJN_Tg"> 加拿大第二届《远方的根》中小学生汉语演讲比赛-2020年8月9日</a><br>
-                                 </tr>
-                              </table>
-                           </div>
-                        </div>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td align="left" valign="top">
-                        <div id="vis4">
-                           <button class="collapsible" id="4b">
-                              <p class="happening"><img src = "icons/mic.png" width=25px><i id="header3"></i></p>
-                           </button>
-                           <div class="contentcol" id="4">
-                              <br>
-                              <img src = "icons/vid.png" width = 35px>活动视频 : </b>
-                              <p style="line-height:25px" id="body3">
-                              </p>
-                           </div>
-                        </div>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td align="left" valign="top">
-                        <div id="vis3">
-                           <button class="collapsible" id="3b">
-                              <p class="happening"><img src = "icons/mic.png" width=25px><i id="header4"></i></p>
-                           </button>
-                           <div class="contentcol" id="3">
-                              <p style="line-height:25px" id="body4">
-                              </p>
-                           </div>
-                        </div>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td align = "left" valign = "top">
-                        <div id="vis2">
-                           <button class="collapsible" id="2b">
-                              <p class = "happening"><img src = "icons/mic.png" width=25px><i id="header2"></i></p>
-                           </button>
-                           <div class="contentcol" id="2">
-                              <p class = "content" id="body2"></p>
-                              <br>
-                              <img src="logos/hskad.jpeg" width=230px>
-                              <img src = "photos/hsk1.jpeg" height=200>&nbsp;&nbsp;&nbsp;&nbsp;<img src = "photos/hsk2.jpeg" height=200>
-                           </div>
-                        </div>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td align = "left" valign = "top">
-                        <div id="vis">
-                           <button class="collapsible" id="1b">
-                              <p class = "happening"><img src = "icons/mic.png" width=25px><i id="header"></i></p>
-                           </button>
-                           <div class="contentcol" id="1">
-                              <p style="line-height:25px" class = "content" id="body"></p>
-                              <br>
-                              <table width=100%>
-                                 <tr>
-                                    <td><img src = "logos/2poster copy.jpg" width = 230px></td>
-                                    <td valign="top" align="center"><b class = "linkTitle"><img src = "icons/news.png" width = 35px>活动新闻</b><br><br>
-                                       <a href="http://www.xinhuanet.com/english/2019-06/10/c_138129457.htm">新华 - North America</a><br>
-                                       <a href="http://world.people.com.cn/n1/2019/0610/c1002-31127822.html">人民网 - people.cn</a><br>
-                                       <a href="https://mp.weixin.qq.com/s/81LuQ1qjrTozCqRZWevMsw">《远方的根》演讲比赛的终结</a><br><br>
-                                       <b class = "linkTitle"><img src = "icons/vid.png" width = 35px>活动视频</b><br><br>
-                                       <a href="https://www.youtube.com/watch?v=S0f8QHbWMjo">《远方的根》 精编版 - youtube.com</a><br>
-                                       <a href="https://xqqy2.kagirl.cn/kphoto/gotoshow.php?onmake=true&wxid=xqqy&bookid=dD2nhG888Uz-lKsQgaACu4ItEz6iKETbPVmwpJ5UxaM&olwxid=jiluyinyuexiangce&shareflag=1&from=singlemessage">《远方的根》- 相册</a>
-                                    </td>
-                                 </tr>
-                              </table>
-                           </div>
-                        </div>
-                  </tr>
-               </table>
+                </table>
+              </div>
             </section>
-         </section>
-      </center>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
-      <script type="text/javascript">
-         var mostRecent = 0;
+        </section>
 
-         var publicSpreadsheetUrl = "https://docs.google.com/spreadsheets/d/1i6S4qp0f-ACZUqL64mRQGVPQXmSMvKELnpSFoRHieNY/edit?usp=sharing";
+    </center>
 
-           function init() {
-             Tabletop.init( {
-               key: publicSpreadsheetUrl,
-               callback: showInfo,
-               simpleSheet: true
-             } )
-           }
 
-           function showInfo(data, tabletop) {
-             data.forEach(function(data) {
-               if (document.getElementById("header10") != null && document.getElementById("body10") != null) {
-                 document.getElementById("header10").innerHTML = data.header10;
-                 document.getElementById("body10").innerHTML = data.body10;
-                 if (document.getElementById("header10").innerHTML.length > 0) {
-                   document.getElementById("vis10").style.display="inline";
-                   if (mostRecent === 0) {
-                     mostRecent = 10;
-                   }
-                 }
-               }
-               if (document.getElementById("header9") != null && document.getElementById("body9") != null) {
-                 document.getElementById("header9").innerHTML = data.header9;
-                 document.getElementById("body9").innerHTML = data.body9;
-                 if (document.getElementById("header9").innerHTML.length > 0) {
-                  document.getElementById("vis9").style.display="inline";
-                  if (mostRecent === 0) {
-                    mostRecent = 9;
-                  }
-                 }
-               }
-               if (document.getElementById("header8") != null && document.getElementById("body8") != null) {
-                 document.getElementById("header8").innerHTML = data.header8;
-                 document.getElementById("body8").innerHTML = data.body8;
-                 if (document.getElementById("header8").innerHTML.length > 0) {
-                   document.getElementById("vis8").style.display="inline";
-                   if (mostRecent === 0) {
-                     mostRecent = 8;
-                   }
-                 }
+    <script>
+        // code for the slideshow
 
-               }
-               if (document.getElementById("header7") != null && document.getElementById("body7") != null) {
-                 document.getElementById("header7").innerHTML = data.header7;
-                 document.getElementById("body7").innerHTML = data.body7;
-                 if (document.getElementById("header7").innerHTML.length > 0) {
-                   document.getElementById("vis7").style.display="inline";
-                   if (mostRecent === 0) {
-                     mostRecent = 7;
-                   }
-                 }
+        var myIndex = 0;
+        carousel();
 
-               }
-               if (document.getElementById("header6") != null && document.getElementById("body6") != null) {
-                 document.getElementById("header6").innerHTML = data.header6;
-                 document.getElementById("body6").innerHTML = data.body6;
-                 if (document.getElementById("header6").innerHTML.length > 0) {
-                   document.getElementById("vis6").style.display="inline";
-                   if (mostRecent === 0) {
-                     console.log(mostRecent);
-                     console.log(6);
-                     mostRecent = 6;
-                     console.log(mostRecent);
-                   }
-                 }
-               }
-               if (document.getElementById("header5") != null && document.getElementById("body5") != null) {
-                 document.getElementById("header5").innerHTML = data.header5;
-                 document.getElementById("body5").innerHTML = data.body5;
-                 if (document.getElementById("header5").innerHTML.length > 0) {
-                   document.getElementById("vis5").style.display="inline";
-                   if (mostRecent === 0) {
-                     //console.log(5);
-                     mostRecent = 5;
-                   }
-                 }
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "inline";
+            setTimeout(carousel, 7000); // Change image every 2 seconds
+        }
 
-               }
-               if (document.getElementById("header4") != null && document.getElementById("body4") != null) {
-                 document.getElementById("header4").innerHTML = data.header4;
-                 document.getElementById("body4").innerHTML = data.body4;
-                 if (document.getElementById("header4").innerHTML.length > 0) {
-                   document.getElementById("vis4").style.display="inline";
-                   if (mostRecent === 0) {
-                     mostRecent = 4;
-                   }
-                 }
+    </script>
+</body>
 
-               }
-               if (document.getElementById("header3") != null && document.getElementById("body3") != null) {
-                 document.getElementById("header3").innerHTML = data.header3;
-                 document.getElementById("body3").innerHTML = data.body3;
-                 if (document.getElementById("header3").innerHTML.length > 0) {
-                   document.getElementById("vis3").style.display="inline";
-                   if (mostRecent === 0) {
-                     mostRecent = 3;
-                   }
-                 }
-
-               }
-               if (document.getElementById("header2") != null && document.getElementById("body2") != null) {
-                 document.getElementById("header2").innerHTML = data.header2;
-                 document.getElementById("body2").innerHTML = data.body2;
-                 if (document.getElementById("header2").innerHTML.length > 0) {
-                   document.getElementById("vis2").style.display="inline";
-                   if (mostRecent === 0) {
-                     mostRecent = 2;
-                   }
-                 }
-
-               }
-               if (document.getElementById("header") != null && document.getElementById("body") != null) {
-                 document.getElementById("header").innerHTML = data.header;
-                 document.getElementById("body").innerHTML = data.body;
-                 if (document.getElementById("header").innerHTML.length > 0) {
-                   document.getElementById("vis").style.display="inline";
-                   if (mostRecent === 0) {
-                     mostRecent = 1;
-                   }
-                 }
-               }
-            });
-           }
-           function collapsibles() {
-             // code for the collapsibles
-             var coll = document.getElementsByClassName("collapsible");
-             var i;
-
-             // contentcolnew.style.maxHeight = 2000 + "px";
-             console.log(mostRecent);
-             // while (mostRecent == 0) {
-             //
-             // }
-             //document.getElementById("6").style.maxHeight = 2000 + "px";
-             document.getElementById(mostRecent.toString()).style.maxHeight = 2000 + "px";
-             document.getElementById(mostRecent.toString() + "b").style.backgroundColor = "#a65959";
-             document.getElementById(mostRecent.toString() + "b").className = "collapsible active";
-
-             for (i = 0; i < coll.length; i++) {
-               coll[i].addEventListener("click", function() {
-                 this.classList.toggle("active");
-                 var contentcol = this.nextElementSibling;
-                 if (contentcol.style.maxHeight){
-                   contentcol.style.maxHeight = null;
-                 } else {
-                   contentcol.style.maxHeight = 2000 + "px";
-                 }
-               });
-             }
-           }
-
-           window.addEventListener('DOMContentLoaded', init);
-           if (mostRecent == 0) {
-             setTimeout(collapsibles, 3000);
-           }
-
-      </script>
-   </body>
 </html>
