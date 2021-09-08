@@ -351,7 +351,7 @@
       <script type="text/javascript">
          var mostRecent = 0;
 
-         var publicSpreadsheetUrl = "https://docs.google.com/spreadsheets/d/1i6S4qp0f-ACZUqL64mRQGVPQXmSMvKELnpSFoRHieNY/edit?usp=sharing";
+         var publicSpreadsheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTKDeVPhWkZEekO4qBRrH07JZC8wxiH5Rs54Kj96Jm4uHBtaq2RGte7p2dpAWkgXdJkH1Y0A2dYFoSp/pub?output=csv";
 
           function init() {
               Papa.parse(publicSpreadsheetUrl, {
@@ -363,7 +363,6 @@
 
            function showInfo(results) {
              var data = results.data
-             data.forEach(function(data) {
                /*
                if (document.getElementById("header15") != null && document.getElementById("body15") != null) {
                  document.getElementById("header15").innerHTML = data[0].header15;
@@ -526,7 +525,6 @@
                    }
                  }
                }
-            });
            }
            function collapsibles() {
              // code for the collapsibles
@@ -557,6 +555,7 @@
            }
 
            window.addEventListener('DOMContentLoaded', init);
+
            if (mostRecent == 0) {
              setTimeout(collapsibles, 3000);
            }
