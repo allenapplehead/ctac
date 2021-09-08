@@ -347,21 +347,22 @@
             </section>
          </section>
       </center>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
       <script type="text/javascript">
          var mostRecent = 0;
 
          var publicSpreadsheetUrl = "https://docs.google.com/spreadsheets/d/1i6S4qp0f-ACZUqL64mRQGVPQXmSMvKELnpSFoRHieNY/edit?usp=sharing";
 
-           function init() {
-             Tabletop.init( {
-               key: publicSpreadsheetUrl,
-               callback: showInfo,
-               simpleSheet: true
-             } )
-           }
+          function init() {
+              Papa.parse(publicSpreadsheetUrl, {
+              download: true,
+              header: true,
+              complete: showInfo
+            })
+          }
 
-           function showInfo(data, tabletop) {
+           function showInfo(results) {
+             var data = results.data
              data.forEach(function(data) {
                if (document.getElementById("header15") != null && document.getElementById("body15") != null) {
                  document.getElementById("header15").innerHTML = data.header15;
