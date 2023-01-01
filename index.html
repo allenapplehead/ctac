@@ -55,6 +55,21 @@
          div#vis15 {
          display: none;
          }
+         div#vis16 {
+         display: none;
+         }
+         div#vis17 {
+         display: none;
+         }
+         div#vis18 {
+         display: none;
+         }
+         div#vis19 {
+         display: none;
+         }
+         div#vis20 {
+         display: none;
+         }
       </style>
    </head>
    <body>
@@ -123,6 +138,71 @@
                </table>
                <br>
                <table id = "events" width = 960px cellspacing = 10px>
+                 <tr>
+                    <td align="left" valign="top">
+                       <div id="vis20">
+                          <button class="collapsible" id="20b">
+                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header20"></i></p>
+                          </button>
+                          <div class="contentcol" id="20">
+                             <p style="line-height:25px" id="body20">
+                             </p>
+                          </div>
+                       </div>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td align="left" valign="top">
+                       <div id="vis19">
+                          <button class="collapsible" id="19b">
+                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header19"></i></p>
+                          </button>
+                          <div class="contentcol" id="19">
+                             <p style="line-height:25px" id="body19">
+                             </p>
+                          </div>
+                       </div>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td align="left" valign="top">
+                       <div id="vis18">
+                          <button class="collapsible" id="18b">
+                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header18"></i></p>
+                          </button>
+                          <div class="contentcol" id="18">
+                             <p style="line-height:25px" id="body18">
+                             </p>
+                          </div>
+                       </div>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td align="left" valign="top">
+                       <div id="vis17">
+                          <button class="collapsible" id="17b">
+                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header17"></i></p>
+                          </button>
+                          <div class="contentcol" id="17">
+                             <p style="line-height:25px" id="body17">
+                             </p>
+                          </div>
+                       </div>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td align="left" valign="top">
+                       <div id="vis16">
+                          <button class="collapsible" id="16b">
+                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header16"></i></p>
+                          </button>
+                          <div class="contentcol" id="16">
+                             <p style="line-height:25px" id="body16">
+                             </p>
+                          </div>
+                       </div>
+                    </td>
+                 </tr>
                  <tr>
                     <td align="left" valign="top">
                        <div id="vis15">
@@ -363,6 +443,56 @@
 
            function showInfo(results) {
              var data = results.data
+               if (document.getElementById("header20") != null && document.getElementById("body20") != null) {
+                 document.getElementById("header20").innerHTML = data[0].header20;
+                 document.getElementById("body20").innerHTML = data[0].body20;
+                 if (document.getElementById("header20").innerHTML.length > 0) {
+                   document.getElementById("vis20").style.display="inline";
+                   if (mostRecent === 0) {
+                     mostRecent = 20;
+                   }
+                 }
+               }
+               if (document.getElementById("header19") != null && document.getElementById("body19") != null) {
+                 document.getElementById("header19").innerHTML = data[0].header19;
+                 document.getElementById("body19").innerHTML = data[0].body19;
+                 if (document.getElementById("header19").innerHTML.length > 0) {
+                   document.getElementById("vis19").style.display="inline";
+                   if (mostRecent === 0) {
+                     mostRecent = 19;
+                   }
+                 }
+               }
+               if (document.getElementById("header18") != null && document.getElementById("body18") != null) {
+                 document.getElementById("header18").innerHTML = data[0].header18;
+                 document.getElementById("body18").innerHTML = data[0].body18;
+                 if (document.getElementById("header18").innerHTML.length > 0) {
+                   document.getElementById("vis18").style.display="inline";
+                   if (mostRecent === 0) {
+                     mostRecent = 18;
+                   }
+                 }
+               }
+               if (document.getElementById("header17") != null && document.getElementById("body17") != null) {
+                 document.getElementById("header17").innerHTML = data[0].header17;
+                 document.getElementById("body17").innerHTML = data[0].body17;
+                 if (document.getElementById("header17").innerHTML.length > 0) {
+                   document.getElementById("vis17").style.display="inline";
+                   if (mostRecent === 0) {
+                     mostRecent = 17;
+                   }
+                 }
+               }
+               if (document.getElementById("header16") != null && document.getElementById("body16") != null) {
+                 document.getElementById("header16").innerHTML = data[0].header16;
+                 document.getElementById("body16").innerHTML = data[0].body16;
+                 if (document.getElementById("header16").innerHTML.length > 0) {
+                   document.getElementById("vis16").style.display="inline";
+                   if (mostRecent === 0) {
+                     mostRecent = 16;
+                   }
+                 }
+               }
                if (document.getElementById("header15") != null && document.getElementById("body15") != null) {
                  document.getElementById("header15").innerHTML = data[0].header15;
                  document.getElementById("body15").innerHTML = data[0].body15;
