@@ -187,10 +187,31 @@
                     <td align="left" valign="top">
                        <div id="vis19">
                           <button class="collapsible" id="19b">
-                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header19"></i></p>
+                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header19">第五届 《远方的根》中小学生汉语演讲比赛开始报名了！</i></p>
                           </button>
                           <div class="contentcol" id="19">
                              <p style="line-height:25px" id="body19">
+                                <b>第五届 《远方的根》中小学生汉语演讲比赛开始报名了！</b><br><br>
+
+                                比赛主题<br>
+
+                                <p style=""color:red;"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你好，未来！</p><br>
+
+                                比赛时间和地点 <br>
+
+                                <p style=""color:red;"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间 ：2023年4月16日 1:45- 4:15pm </p>
+
+                                <p style=""color:red;"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地点： Centrepointe library - Chamber room </p><br>
+
+                                参赛对象<br><br>
+
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中小学在校学生</p> <br><br>
+
+
+
+                                报名链接: <a href="https://docs.google.com/forms/d/e/1FAIpQLSc62HxLOkqClZcYPtvIs_ds-wRJQatpPUu-FeLD1tJimSi9ag/viewform?usp=pp_url">https://docs.google.com/forms/d/e/1FAIpQLSc62HxLOkqClZcYPtvIs_ds-wRJQatpPUu-FeLD1tJimSi9ag/viewform?usp=pp_url</a>
+
+                                <img width=500px src="files/5th_Roots_Of_Distance/poster.jpeg">
                              </p>
                           </div>
                        </div>
@@ -200,10 +221,31 @@
                     <td align="left" valign="top">
                        <div id="vis18">
                           <button class="collapsible" id="18b">
-                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header18"></i></p>
+                             <p class="happening"><img src = "icons/mic.png" width=25px><i id="header18">“怎样引导学生学中文” 经验交流会</i></p>
                           </button>
                           <div class="contentcol" id="18">
                              <p style="line-height:25px" id="body18">
+                                <b>“怎样引导学生学中文” 经验交流会</b><br>
+
+                                时间：2023年2月12日（星期日）<br>
+                                        19 :30-20:30pm（渥太华时间）<br>
+
+                                <br>主讲： 天天中文学校 徐平老师         <br><br>
+
+                                怎样提高孩子们学中文的兴趣, 引导学生更好的学中文,是每位老师在教学中遇到的问题。<br><br>
+
+                                “抱团取暖，共同进步” ！欢迎各位老师报名参加本届经验交流会！<br><br>
+
+                                报名链接：<br><br>
+
+                                <a href=""https://docs.google.com/forms/d/e/1FAIpQLSdFGMkugYn2gABBwKjcAFD_K6zBqXDzflwtPDB3J0uk6o7H6w/viewform?usp=pp_url"">https://docs.google.com/forms/d/e/1FAIpQLSdFGMkugYn2gABBwKjcAFD_K6zBqXDzflwtPDB3J0uk6o7H6w/viewform?usp=pp_url </a> <br><br>
+
+
+                                报名截止日期 <br>
+                                2023年2月10日18:00pm <br><br>
+
+                                Zoom Meeting ID will be sent by email <br>
+                                and post on CTAC wechat group
                              </p>
                           </div>
                        </div>
@@ -505,25 +547,13 @@
                //     }
                //   }
                // }
-               if (document.getElementById("header19") != null && document.getElementById("body19") != null) {
-                 document.getElementById("header19").innerHTML = data[0].header19;
-                 document.getElementById("body19").innerHTML = data[0].body19;
-                 if (document.getElementById("header19").innerHTML.length > 0) {
-                   document.getElementById("vis19").style.display="inline";
-                   if (mostRecent === 0) {
-                     mostRecent = 19;
-                   }
-                 }
+               document.getElementById("vis19").style.display="inline";
+               if (mostRecent === 0) {
+                 mostRecent = 19;
                }
-               if (document.getElementById("header18") != null && document.getElementById("body18") != null) {
-                 document.getElementById("header18").innerHTML = data[0].header18;
-                 document.getElementById("body18").innerHTML = data[0].body18;
-                 if (document.getElementById("header18").innerHTML.length > 0) {
-                   document.getElementById("vis18").style.display="inline";
-                   if (mostRecent === 0) {
-                     mostRecent = 18;
-                   }
-                 }
+               document.getElementById("vis18").style.display="inline";
+               if (mostRecent === 0) {
+                 mostRecent = 18;
                }
                if (document.getElementById("header17") != null && document.getElementById("body17") != null) {
                  document.getElementById("header17").innerHTML = data[0].header17;
