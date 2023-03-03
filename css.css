@@ -8,6 +8,13 @@
 .navbar {
   z-index: 1;
 }
+
+#navbarpara {
+  margin-left: 3%;
+  margin-right: 3%;
+  line-height: 30px;
+}
+
 ul {
     width: 1002px;
     list-style-type: none;
