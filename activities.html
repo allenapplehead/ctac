@@ -148,7 +148,7 @@
                </table>
                <br>
                <table id = "events" width = 960px cellspacing = 10px>
-                 <!-- <tr>
+                 <tr>
                     <td align="left" valign="top">
                        <div id="vis22">
                           <button class="collapsible" id="22b">
@@ -160,7 +160,7 @@
                           </div>
                        </div>
                     </td>
-                 </tr>  -->
+                 </tr> 
                  <tr>
                     <td align="left" valign="top">
                        <div id="vis21">
@@ -479,16 +479,16 @@
 
            function showInfo(results) {
              var data = results.data
-               // if (document.getElementById("header22") != null && document.getElementById("body22") != null) {
-               //   document.getElementById("header22").innerHTML = data[0].header22;
-               //   document.getElementById("body22").innerHTML = data[0].body22;
-               //   if (document.getElementById("header22").innerHTML.length > 0) {
-               //     document.getElementById("vis22").style.display="inline";
-               //     if (mostRecent === 0) {
-               //       mostRecent = 22;
-               //     }
-               //   }
-               // }
+               if (document.getElementById("header22") != null && document.getElementById("body22") != null) {
+                 document.getElementById("header22").innerHTML = data[0].header22;
+                 document.getElementById("body22").innerHTML = data[0].body22;
+                 if (document.getElementById("header22").innerHTML.length > 0) {
+                   document.getElementById("vis22").style.display="inline";
+                   if (mostRecent === 0) {
+                     mostRecent = 22;
+                   }
+                 }
+               }
                if (document.getElementById("header21") != null && document.getElementById("body21") != null) {
                  document.getElementById("header21").innerHTML = data[0].header21;
                  document.getElementById("body21").innerHTML = data[0].body21;
